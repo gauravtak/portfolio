@@ -1,4 +1,3 @@
-import React from "react";
 import { Link } from "react-router";
 import { ArrowRight, Download, Github, Linkedin, Mail } from "lucide-react";
 

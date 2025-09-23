@@ -1,4 +1,3 @@
-import React from "react";
 import ExperienceTimeline from "../components/ExperienceTimeline";
 import { Code, Database, Globe, Smartphone, Workflow } from "lucide-react";
 

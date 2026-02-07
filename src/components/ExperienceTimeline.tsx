@@ -36,11 +36,6 @@ const ExperienceTimeline = () => {
       <div className="space-y-12">
         {experiences.map((exp, index) => (
           <div key={index} className="relative flex items-start space-x-8">
-            {/* Timeline dot */}
-            <div className="relative z-10 flex items-center justify-center w-16 h-16 bg-purple rounded-full border-4 border-dark">
-              <div className="w-6 h-6 bg-teal rounded-full"></div>
-            </div>
-
             {/* Content */}
             <div className="flex-1 bg-gradient-to-br from-purple/10 to-teal/5 p-6 rounded-lg border border-purple/20 hover:border-purple/40 transition-colors">
               <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-4">

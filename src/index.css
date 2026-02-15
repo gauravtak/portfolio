@@ -1,35 +1,103 @@
 @import "tailwindcss";
 
-@theme {
-  --color-primary: #BB86FC;
-  --color-secondary: #03DAC6;
-  --color-accent: #BB86FC;
-  --color-background: #121212;
-  --color-text: #EDEDED;
-  --color-dark: #121212;
-  --color-purple: #BB86FC;
-  --color-teal: #03DAC6;
-  --color-lightgray: #EDEDED;
-  
-  --font-family-sans: 'Inter', system-ui, sans-serif;
-  --font-family-mono: 'JetBrains Mono', monospace;
-  
-  --animate-fade-in: fadeIn 0.6s ease-out;
-  --animate-slide-up: slideUp 0.8s ease-out;
-  --animate-float: float 6s ease-in-out infinite;
+html {
+  font-family: "Inconsolata", monospace;
 }
 
+/* Custom Scrollbar Styles */
+::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0b0b12;
+  border-left: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg,
+      #8b5cf6 0%,
+      #a78bfa 25%,
+      #7c3aed 50%,
+      #22d3ee 75%,
+      #06b6d4 100%);
+  border-radius: 6px;
+  border: 2px solid #0b0b12;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg,
+      #a78bfa 0%,
+      #c4b5fd 20%,
+      #8b5cf6 40%,
+      #22d3ee 60%,
+      #67e8f9 80%,
+      #06b6d4 100%);
+}
+
+::-webkit-scrollbar-thumb:active {
+  background: linear-gradient(180deg,
+      #c4b5fd 0%,
+      #a78bfa 20%,
+      #8b5cf6 35%,
+      #22d3ee 65%,
+      #67e8f9 80%,
+      #0891b2 100%);
+}
+
+/* Firefox Scrollbar */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #8b5cf6 #0b0b12;
+}
+
+@theme {
+  --color-bg: #0b0b12;
+
+  /* modern accents */
+  --color-accent-1: #8b5cf6;
+  /* violet */
+  --color-accent-2: #22d3ee;
+  /* cyan */
+
+  /* surfaces */
+  --color-surface: rgba(255, 255, 255, 0.02);
+  --color-surface-2: rgba(255, 255, 255, 0.04);
+  --color-border: rgba(255, 255, 255, 0.10);
+}
+
+
 @keyframes fadeIn {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
 
 @keyframes slideUp {
-  0% { opacity: 0; transform: translateY(30px); }
-  100% { opacity: 1; transform: translateY(0); }
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 @keyframes float {
-  0%, 100% { transform: translateY(0px); }
-  50% { transform: translateY(-10px); }
+
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
 }

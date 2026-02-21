@@ -1,6 +1,7 @@
 import { Link } from "react-router";
 import { Github, Linkedin, Mail, ArrowRight, Download } from "lucide-react";
 import Navbar from "../components/Navbar";
+import PuzzleCanvas from "../components/PuzzleCanvas";
 
 const Home = () => {
   return (
@@ -41,8 +42,7 @@ const Home = () => {
                 </h1>
 
                 <p className="mt-4 max-w-xl text-white/65 leading-relaxed">
-                  I’m Gaurav Tak — a full-stack engineer focused on shipping fast,
-                  maintainable products using React, Node.js, Nest.js, and cloud.
+                  I’m Gaurav Tak — a full-stack engineer building scalable, production-ready applications with modern frameworks and cloud infrastructure.
                 </p>
 
                 <div className="mt-6 flex flex-wrap gap-3">
@@ -54,11 +54,10 @@ const Home = () => {
                   </Link>
 
                   <a
-                    href="https://drive.usercontent.google.com/u/0/uc?id=1m-z2ER1NHCWMao8jNVycddI-F3WNbpuK&export=download"
+                    href="https://drive.google.com/file/d/116fc0ElHffCqJDJ_-Cd-3sD6xD9qLD06/view?usp=sharing"
                     className="inline-flex items-center gap-2 border border-white/10 bg-transparent px-5 py-3 text-sm font-semibold text-white/80 hover:text-white hover:bg-white/[0.04] hover:border-cyan-300/30 transition"
                   >
-                    <Download className="h-4 w-4" />
-                    Download CV
+                    Resume
                   </a>
                 </div>
 
@@ -84,13 +83,11 @@ const Home = () => {
                 </div>
               </div>
 
-              {/* BLANK RIGHT BLOCK */}
-              <div className="relative lg:col-span-4 bg-black/20 p-6">
-                {/* subtle gradient wash so it's not "dead" */}
+              {/* PUZZLE CANVAS RIGHT BLOCK */}
+              <div className="relative lg:col-span-4 bg-black/20 min-h-[280px]">
+                {/* subtle gradient wash */}
                 <div className="absolute inset-0 bg-gradient-to-br from-violet-500/[0.07] via-transparent to-cyan-400/[0.06]" />
-                <div className="relative">
-                  {/* Intentionally blank */}
-                </div>
+                <PuzzleCanvas />
               </div>
             </div>
 
@@ -112,10 +109,10 @@ const Home = () => {
 
                 <div className="mt-5 grid grid-cols-1 sm:grid-cols-2">
                   {[
-                    { title: "Linktree Clone", desc: "Profile links + dashboard" },
-                    { title: "Auth + RBAC", desc: "JWT auth + roles" },
-                    { title: "API Platform", desc: "Clean backend architecture" },
-                    { title: "Portfolio v2", desc: "Minimal boxed design" },
+                    { title: "Squeez", desc: "Cli tool for file compression", link: "https://github.com/gauravtak/CodingChallenges/tree/main/squeez" },
+                    { title: "Punktree", desc: "Profile links aggregator", link: "https://github.com/gauravtak/punktree" },
+                    { title: "Sekarippu", desc: "Local Book Manager", link: "https://github.com/gauravtak/sekarippu" },
+                    { title: "Vimet", desc: "Video Chat", link: "https://github.com/gauravtak/vimet" },
                   ].map((p, idx) => (
                     <div
                       key={p.title}
@@ -126,8 +123,15 @@ const Home = () => {
                         idx >= 2 ? "border-t" : "",
                       ].join(" ")}
                     >
-                      <p className="font-semibold text-white/85">{p.title}</p>
-                      <p className="mt-2 text-sm text-white/60">{p.desc}</p>
+                      <div className="flex flex-row justify-between">
+                        <div>
+                          <p className="font-semibold text-white/85">{p.title}</p>
+                          <p className="mt-2 text-sm text-white/60">{p.desc}</p>
+                        </div>
+                        <a href={p.link} className="mt-2 text-sm text-white/60">
+                          <Github className="h-4 w-4" />
+                        </a>
+                      </div>
                     </div>
                   ))}
                 </div>
@@ -138,7 +142,7 @@ const Home = () => {
             <div className="grid grid-cols-1 sm:grid-cols-2 divide-y divide-white/10 sm:divide-y-0 sm:divide-x sm:divide-white/10">
               {/* QUICK STATS */}
               <div className="bg-black/20 p-6">
-                <p className="text-sm font-semibold text-white/80">
+                {/* <p className="text-sm font-semibold text-white/80">
                   Quick stats
                 </p>
 
@@ -160,7 +164,7 @@ const Home = () => {
                       <p className="mt-2 text-2xl font-bold">{s.value}</p>
                     </div>
                   ))}
-                </div>
+                </div> */}
 
                 <div className="mt-6">
                   <p className="text-xs font-semibold tracking-wide text-white/45">
@@ -169,13 +173,18 @@ const Home = () => {
                   <div className="mt-3 flex flex-wrap gap-2">
                     {[
                       "React",
+                      "Angular",
                       "TypeScript",
                       "Node.js",
+                      "Express",
                       "NestJS",
                       "MongoDB",
                       "PostgreSQL",
                       "Docker",
                       "AWS",
+                      "Kubernetes",
+                      "ArgoCD",
+                      "Github Actions"
                     ].map((t) => (
                       <span
                         key={t}

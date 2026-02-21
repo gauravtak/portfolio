@@ -106,7 +106,7 @@ const About = () => {
                     </li>
                     <li className="flex items-center gap-3">
                       <span className="w-2 h-2 bg-cyan-300 rounded-full"></span>
-                      🎓 Computer Science Degree
+                      🎓 B.Tech in Computer Science and Engineering
                     </li>
                     <li className="flex items-center gap-3">
                       <span className="w-2 h-2 bg-violet-400 rounded-full"></span>

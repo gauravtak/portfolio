@@ -1,5 +1,5 @@
 import { Link } from "react-router";
-import { Github, Linkedin, Mail, ArrowRight, Download } from "lucide-react";
+import { Github, Linkedin, Mail, ArrowRight } from "lucide-react";
 import Navbar from "../components/Navbar";
 import PuzzleCanvas from "../components/PuzzleCanvas";
 

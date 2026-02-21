@@ -24,6 +24,20 @@ const Projects = () => {
       technologies: ["Rust", "CLI", "Unix Tools", "File Processing"],
       github: "https://github.com/gauravtak/CodingChallenges/tree/main/ccwc",
     },
+    {
+      title: "Sekarippu",
+      description:
+        "Sēkarippu is a local book manager app for organizing and viewing your book collection right from your device. It’s implemented with TypeScript and provides a simple interface to manage books stored in your local folders.",
+      technologies: ["TypeScript", "Tauri"],
+      github: "https://github.com/gauravtak/sekarippu",
+    },
+    {
+      title: "Punktree",
+      description:
+        "A lightweight open-source Linktree clone",
+      technologies: ["TypeScript", "React", "Express", "MongoDB"],
+      github: "https://github.com/gauravtak/punktree",
+    },
   ];
 
   return (
@@ -54,9 +68,7 @@ const Projects = () => {
                 Things I’ve built
               </h1>
               <p className="mt-3 max-w-2xl text-sm sm:text-base text-white/65 leading-relaxed">
-                A collection of projects that highlight backend engineering,
-                systems work, and clean UI. Every project is shown in its own
-                dedicated block.
+                Collection of projects that I've built
               </p>
             </div>
 

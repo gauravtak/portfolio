@@ -54,7 +54,7 @@ const Home = () => {
                   </Link>
 
                   <a
-                    href="https://drive.google.com/file/d/1m-z2ER1NHCWMao8jNVycddI-F3WNbpuK/view"
+                    href="https://drive.google.com/file/d/149B7Ceht_iNrJHMPczdlLF5LPv-zPZfD/view?usp=sharing"
                     className="inline-flex items-center gap-2 border border-white/10 bg-transparent px-5 py-3 text-sm font-semibold text-white/80 hover:text-white hover:bg-white/[0.04] hover:border-cyan-300/30 transition"
                   >
                     Resume
@@ -110,8 +110,7 @@ const Home = () => {
                 <div className="mt-5 grid grid-cols-1 sm:grid-cols-2">
                   {[
                     { title: "Squeez", desc: "Cli tool for file compression", link: "https://github.com/gauravtak/CodingChallenges/tree/main/squeez" },
-                    { title: "Punktree", desc: "Profile links aggregator", link: "https://github.com/gauravtak/punktree" },
-                    { title: "Sekarippu", desc: "Local Book Manager", link: "https://github.com/gauravtak/sekarippu" },
+                    { title: "Movooks", desc: "Full-stack Media Journal", link: "https://github.com/gauravtak/movooks" },
                     { title: "Vimet", desc: "Video Chat", link: "https://github.com/gauravtak/vimet" },
                   ].map((p, idx) => (
                     <div

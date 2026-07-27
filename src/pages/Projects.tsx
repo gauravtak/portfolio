@@ -25,18 +25,11 @@ const Projects = () => {
       github: "https://github.com/gauravtak/CodingChallenges/tree/main/ccwc",
     },
     {
-      title: "Sekarippu",
+      title: "Movooks",
       description:
-        "Sēkarippu is a local book manager app for organizing and viewing your book collection right from your device. It’s implemented with TypeScript and provides a simple interface to manage books stored in your local folders.",
-      technologies: ["TypeScript", "Tauri"],
-      github: "https://github.com/gauravtak/sekarippu",
-    },
-    {
-      title: "Punktree",
-      description:
-        "A lightweight open-source Linktree clone",
-      technologies: ["TypeScript", "React", "Express", "MongoDB"],
-      github: "https://github.com/gauravtak/punktree",
+        "Full-stack media-tracking app with React + Vite front end and Node/Express + MongoDB API. Built JWT access tokens and HTTP-only refresh cookies for security. Developed a companion Android app in Kotlin + Jetpack Compose using offline-first MVVM and local Room syncing to Cloud Firestore. Automated production deploys to GCP VM with Docker, Kamal, and GitHub Actions CI, with cross-platform data portability (web export / Android import).",
+      technologies: ["React", "Vite", "Node.js", "Express", "MongoDB", "Kotlin", "Jetpack Compose", "Firebase", "Docker", "GitHub Actions"],
+      github: "https://github.com/gauravtak/movooks",
     },
   ];
 
